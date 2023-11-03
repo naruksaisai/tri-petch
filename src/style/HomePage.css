@@ -22,6 +22,7 @@
     margin-top: 55px;
     max-width: 70%;
     height: auto;  
+    z-index: 5;
 }
 
 .lower-image-container {
@@ -35,22 +36,66 @@
     background-color: rgba(0, 0, 0, 0.511);
 }
 .lower-image {
-    border: #000 solid;
     right: 0px;
     position: absolute;
     margin-right: 125px;
     max-width: 70%;
     height: auto;  
+    z-index: 5;
+}
+
+.tick-rectangle-image{
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    margin-top: 7%;
+    right: 42%;
+}
+
+#lower-rectangle.tick-rectangle-image{
+    margin-top: 21%;
+    right: 17%;
+}
+
+.pathst-image{
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    margin-top: 475px;
+    right: 35%;
+}
+
+#upper-pathst.pathst-image{
+    margin-top: 80px;
+    right: 10%;
+}
+
+.upper-light-rectangle-image{
+    display: none;
+}
+
+.upper-tick-rectangle-image{
+    display: none;
+}
+
+.upper-pathst-image{
+    display: none;
+}
+
+.light-rectangle-image{
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    margin-top: 8%;
+    right: 41%;
 }
 
 .left-component{
     width: 50%;
-    background-color: rgb(240, 162, 46);
 }
 
 .lower-left-component{
-    width: 10%;
-    background-color: rgb(240, 162, 46);
+    width: 18%;
 }
 
 .header-container{
@@ -66,6 +111,10 @@
     display: flex;
     width: 100%;
     height: 256px;
+}
+
+#lowwer-connection.connection-container{
+    margin-top: 80px;
 }
 .collaboration-container{
     align-items: center;
@@ -104,6 +153,15 @@
     line-height: normal;
 }
 
+.lower-header{
+    margin-top: 200px;
+    color: #E7E7E7;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .sub-title{
     color: #000;
     font-size: 20px;
@@ -115,34 +173,23 @@
     display: flex;
 }
 
+
+#last-subtitle-component.sub-title:last-child {
+    color: #fff;
+}
+
 .content-detail{
     color: #000;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-    /* background-color: #515477; */
     max-width: 717px;
 }
-
-.last-sub-title{
+#last-detail-component.content-detail:last-child {
     color: #fff;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    padding-bottom: 31px;
 }
 
-.last-content-detail{
-    color: #fff;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    /* background-color: #515477; */
-    max-width: 717px;
-}
 
 .number-title{
     width: fit-content;
@@ -162,7 +209,7 @@
 @media (max-width: 768px) {
     .upper-image {
         margin-left: -160px;
-        margin-top: 55px;
+        margin-top: 70px;
         max-width: 70%;
         height: auto;  
     }
@@ -176,6 +223,73 @@
         justify-content: space-between;
         max-width: 50%;
     }
+    .header{
+        margin-top: 20px;
+    }
+    .upper-light-rectangle-image{
+        display: flex;
+        position: absolute;
+        margin-top: 50px;
+        left: 5%;
+    }
+    .upper-tick-rectangle-image{
+        display: flex;
+        position: absolute;
+        margin-top: 60px;
+        left: 8%;
+    }
+    .upper-pathst-image{
+        display: flex;
+        position: absolute;
+        margin-top: 80px;
+        left: 1.5%;
+    }
+    .lower-left-component{
+        width: 5%;
+    }
+    .lower-image {
+        left: 36%;
+        position: absolute;
+        margin-top: 33px;
+        min-width: 100%;
+        height: auto;  
+        z-index: 5;
+    }
+    .lower-header{
+        margin-top: 52px;
+        color: #E7E7E7;
+        font-size: 90px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    #lowwer-connection.connection-container{
+        margin-top: 0px;
+    }
+
+    .pathst-image{
+        display: none;
+    }
+    #upper-pathst.pathst-image{
+        display: flex;
+        margin-top: 260px;
+        right: 10%;
+    }
+    .tick-rectangle-image{
+        position: absolute;
+        width: fit-content;
+        display: flex;
+        margin-top: 120px;
+        right: 32%;
+    }
+    .light-rectangle-image{
+        position: absolute;
+        width: fit-content;
+        display: flex;
+        margin-top: 135px;
+        right: 29%;
+    }
+
   }
 
   
