@@ -1,0 +1,23 @@
+[33mcommit a83b585ea7950145c0701256558afa24911a6062[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/add-home-page[m[33m)[m
+Author: Saksit <joniejostar@gmail.com>
+Date:   Sat Nov 4 01:38:17 2023 +0700
+
+    Adjust UI in 768 resolution
+
+[33mcommit ffebfb4d861bb0e5796bc450f7967d3955da4d92[m[33m ([m[1;31morigin/feature/add-home-page[m[33m)[m
+Author: Saksit <joniejostar@gmail.com>
+Date:   Fri Nov 3 19:46:07 2023 +0700
+
+    Add the ui lower part
+
+[33mcommit d819ca36a439c6a82c8dcd8b315fa9c16a7c94a8[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Saksit <joniejostar@gmail.com>
+Date:   Thu Nov 2 20:26:01 2023 +0700
+
+    Init project
+
+[33mcommit bae91da73f2ea0f211432946a2241dfa027b2f40[m
+Author: naruksaisai <joniejostar@gmail.com>
+Date:   Thu Nov 2 13:25:15 2023 +0700
+
+    Initial commit
