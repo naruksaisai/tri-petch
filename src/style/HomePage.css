@@ -12,9 +12,7 @@
     flex-direction: row; 
     position: absolute;
     width: 100%;    
-    /* left: calc(100px - ( (100vw * 0.2) - (100vw * 0.1))); */
-    /* right: calc(100vw-((100vw * 0.2) - (100vw * 0.1))); */
-    left: calc(100vw-(100vw / 0.1));
+    right: calc(11vw - ((100vw * 0.2) - (100vw * 0.1)));
 }
 
 .upper-image {
@@ -30,9 +28,7 @@
     flex-direction: row; 
     position: absolute;
     width: 100%; 
-    /* left: calc(100px - ( (100vw * 0.2) - (100vw * 0.1))); */
     right: calc(100vw-((100vw * 0.2) - (100vw * 0.1)));
-    /* left: calc(100vw-(100vw / 0.1)); */
     background-color: rgba(0, 0, 0, 0.511);
 }
 .lower-image {
@@ -121,6 +117,7 @@
     display: flex;
     width: 100%;
     height: 256px;
+    background-color: #F5F4F9;
 }
 .growth-container{
     align-items: center;
@@ -188,6 +185,7 @@
     font-weight: 400;
     line-height: 28px;
     max-width: 717px;
+    padding-top: 31px;
 }
 #last-detail-component.content-detail:last-child {
     color: #fff;
@@ -205,7 +203,8 @@
 }
 
 .number-component{
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 4px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -230,10 +229,6 @@
     background: #FFFFFF;
 }
 
-/* .number-underline:last-child{
-    background: #FFFFFF;
-} */
-
 .sliocky-container{
     display: flex;
     flex-direction: column;
@@ -254,9 +249,49 @@
     /* max-width: 320px; */
     margin:auto;
   }
-  
+
+@media (max-width: 1520px) {
+    .upper-image-container {
+        display: flex;
+        flex-direction: row; 
+        position: absolute;
+        width: 100%;
+        top: 5%;
+        right: calc(11vw - ((48vw * 0.6) - (100vw * 0.3)));
+    }
+    .upper-image {
+        margin-left: 43px;
+        margin-top: 70px;
+        max-width: 70%;
+        height: auto;  
+    }
+    .lower-image-container {
+        display: flex;
+        flex-direction: row; 
+        position: absolute;
+        width: 100%; 
+        left: 20%;
+    }
+    .lower-image {
+        left: 40%;
+        position: absolute;
+        margin-top: 5%;
+        min-width: 50%;
+        height: auto;  
+        z-index: 5;
+
+    }
+}
 
 @media (max-width: 768px) {
+    .upper-image-container {
+        display: flex;
+        flex-direction: row; 
+        position: absolute;
+        width: 100%;
+        top: 5%;
+        right: calc(0vw - ((48vw * 0.6) - (100vw * 0.3)));
+    }
     .upper-image {
         margin-left: -160px;
         margin-top: 70px;
@@ -290,16 +325,23 @@
     .upper-pathst-image{
         display: flex;
         position: absolute;
-        margin-top: 80px;
-        left: 1.5%;
+        margin-top: 20%;
+        right: 60%;
+    }
+    .pathst-image{
+        position: absolute;
+        width: fit-content;
+        display: flex;
+        margin-top: 475px;
+        left: 50%;
     }
     .lower-left-component{
         width: 5%;
     }
     .lower-image {
-        left: 36%;
+        left: 20%;
         position: absolute;
-        margin-top: 33px;
+        margin-top: 5%;
         min-width: 100%;
         height: auto;  
         z-index: 5;
@@ -329,14 +371,14 @@
         width: fit-content;
         display: flex;
         margin-top: 120px;
-        right: 32%;
+        right: 50%;
     }
     .light-rectangle-image{
         position: absolute;
         width: fit-content;
         display: flex;
         margin-top: 135px;
-        right: 29%;
+        right: 45%;
     }
     .content-detail{
         color: #000;
@@ -345,13 +387,13 @@
         font-style: normal;
         font-weight: 400;
         line-height: 28px;
+        padding-top: 21;
     }
     .number-component{
         padding-top: 4px;
         padding-bottom: 4px;
         padding-right: 5px;
     }
-
   }
 
   @media (max-width: 350px) {
@@ -471,10 +513,18 @@
         margin-top: 1px;
     }
     .upper-image-container {
+        top: 0%;
         display: flex;
         flex-direction: row; 
-        width: 100%;    
-        left: calc(100vw-(100vw / 0.1));
+        width: 100%;  
+        left: 0%;  
+    }
+    .lower-image-container {
+        display: flex;
+        flex-direction: row; 
+        position: absolute;
+        width: 100%; 
+        left: 0%;
     }
   }
 
