@@ -29,7 +29,6 @@
     position: absolute;
     width: 100%; 
     right: calc(100vw-((100vw * 0.2) - (100vw * 0.1)));
-    background-color: rgba(0, 0, 0, 0.511);
 }
 .lower-image {
     right: 0px;
@@ -340,7 +339,7 @@
         width: 5%;
     }
     .lower-image {
-        left: 20%;
+        left: 40%;
         position: absolute;
         margin-top: 5%;
         min-width: 100%;
@@ -394,6 +393,15 @@
         padding-top: 4px;
         padding-bottom: 4px;
         padding-right: 5px;
+    }
+    .lower-image-container {
+        display: flex;
+        flex-direction: row; 
+        position: absolute;
+        width: 100%; 
+        left: 0%;
+        height: 450px;
+        overflow: hidden;
     }
   }
 
